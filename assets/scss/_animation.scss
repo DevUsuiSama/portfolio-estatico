@@ -1,0 +1,172 @@
+/*
+    https://mdbootstrap.com/docs/standard/pro/
+*/
+
+.animation {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    padding: auto
+}
+
+@media(prefers-reduced-motion) {
+    .animation {
+        transition: none !important;
+        -webkit-animation: unset !important;
+        animation: unset !important
+    }
+}
+
+.animation.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+.animation.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+.animation.delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.animation.delay-3s {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s
+}
+
+.animation.delay-4s {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s
+}
+
+.animation.delay-5s {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s
+}
+
+.animation.fast {
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s
+}
+
+.animation.faster {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s
+}
+
+.animation.slow {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s
+}
+
+.animation.slower {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s
+}
+
+@-webkit-keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0)
+    }
+}
+
+.fade-in-right {
+    -webkit-animation-name: fade-in-right;
+    animation-name: fade-in-right
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fade-in {
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in
+}
+
+@-webkit-keyframes tada {
+    0% {
+        transform: scaleX(1)
+    }
+
+    10%,
+    20% {
+        transform: scale3d(.9, .9, .9) rotate(-3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+    }
+
+    to {
+        transform: scaleX(1)
+    }
+}
+
+@keyframes tada {
+    0% {
+        transform: scaleX(1)
+    }
+
+    10%,
+    20% {
+        transform: scale3d(.9, .9, .9) rotate(-3deg)
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+    }
+
+    to {
+        transform: scaleX(1)
+    }
+}
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada
+}

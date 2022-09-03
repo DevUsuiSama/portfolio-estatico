@@ -1,0 +1,81 @@
+<!--
+ Created on Wed Aug 31 2022
+ Copyright (c) 2022 UsuiSama
+-->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login</title>
+		<link rel="shortcut icon" href="assets/icon/portafolio.png" type="image/x-icon">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/jquery_toast/dist/jquery.toast.min.css">
+		<link rel="stylesheet" href="assets/scss/custom.css">
+		<script type="text/javascript" src="assets/bootstrap/js/popper.min.js"></script>
+		<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/jquery_toast/dist/jquery.toast.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#login").click(function() {
+					$.toast({
+						heading: 'Error',
+						text: 'Esta en proceso de desarrollo',
+						showHideTransition: 'fade',
+						icon: 'error'
+					});
+				});
+            });
+        </script>
+	</head>
+	<body class="bg-dark user-select-none d-grid m-0 p-0">
+		<header class="container-fluid navbar navbar-expand-lg shadow-bottom-color-white rounded p-3 border-bottom">
+			<div class="d-flex gap-3 align-items-center me-3" style="width:min-content">
+				<img src="assets/img/ArgentinaPrograma.jpg" alt="argentinaPrograma" height="40" class="border rounded">
+				<div class="text-white font-cinzelDecorativeBold text-shadow-type1">
+					Argentina Programa
+				</div>
+			</div>
+			<h1 class="text-white navbar-brand m-0 text-start text-truncate" style="width:60vw">INGRESO AL PANEL AUTOADMINISTRABLE</h1>
+		</header>
+		<main role="main" class="vh-100 d-grid justify-content-center align-items-center bg-img">
+			<form class="d-grid align-items-center justify-content-center bg-dark-type3 bg-gradient p-3 rounded shadow border border-warning" style="width:max-content" onclick="event.preventDefault()">
+				<div class="form-group">
+					<label for="exampleInputEmail1" class="text-white">Usuario</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="exampleInputPassword1" class="text-white">Clave</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Clave">
+				</div>
+				<br>
+				<div class="d-flex justify-content-center gap-2">
+					<button id="login" type="submit" class="btn btn-warning text-white">Ingresar</button>
+					<button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Cancelar</button>
+				</div>
+				<br>
+				<div class="w-100 text-center">
+					<a href="#ingreso" class="link-danger text-wrap">Si no está registrado haga clic aquí</a>
+				</div>
+			</form>
+		</main>
+        <div class="p-2 rounded shadow border-top shadow-top-color-white">
+            <article class="text-white text-center">
+                <h2>Datos del Alumno</h2><br>
+                <p>
+                    <b>Nombre y Apellido:</b>&nbsp;Usui, José  Fernando<br>
+                    <b>Fecha de Nacimiento:</b>&nbsp;12/10/1998<br>
+                    <b>Edad:</b>&nbsp;23 Años
+                </p>
+            </article>
+		    <address class="text-white text-center">
+		    	Posadas, Misiones<br>
+		    	<abbr title="Teléfono"><b>Teléfono:</b></abbr>&nbsp;+54 9 376 509-7997<br>
+                <a href="mailto:joesesilvae@gmail.com">joesesilvae@gmail.com</a>
+		    </address>
+        </div>
+	</body>
+</html>
